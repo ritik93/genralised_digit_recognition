@@ -15,3 +15,10 @@ This is a multiclass classification task where one of n choices is selected
     - `y = 0` if the image is of the digit `0`, `y = 4` if the image is of the digit `4` and so on.
 
 1 <sub> This is a subset of the MNIST handwritten digit dataset (http://yann.lecun.com/exdb/mnist/)</sub>
+  
+  
+## Model Representation  
+- The neural network has two dense layers with ReLU activations followed by an output layer with a linear activation. 
+    - Our inputs are pixel values of digit images.
+    - Since the images are of size 20 x 20, this gives us 400 inputs
+    - The parameters have dimensions that are sized for a neural network with $25$ units in layer 1, $15$ units in layer 2 and $10$ output units in layer 3, one for each digit.
