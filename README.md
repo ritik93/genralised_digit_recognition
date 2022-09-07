@@ -21,4 +21,10 @@ This is a multiclass classification task where one of n choices is selected
 - The neural network has two dense layers with ReLU activations followed by an output layer with a linear activation. 
     - Our inputs are pixel values of digit images.
     - Since the images are of size $20$ x $20$, this gives us $400$ inputs
-    - The parameters have dimensions that are sized for a neural network with $25$ units in layer 1, $15$ units in layer 2 and $10$ output units in layer 3, one for each digit.
+    - The parameters have dimensions that are sized for a neural network with $25$ units in layer 1, $15$ units in layer 2 and $10$ output units in layer 3, one for each digit.  
+    
+    
+## Model Implementation  
+- The Model's implementation is done using Tensorflow's Keras Sequential model and Dense layer
+- For numerical stability, the softmax activation , for multiclass classification, is grouped with the loss function rather than the output layer
+- The implementation is shown in `tf_model_dig_rec.ipynb`
